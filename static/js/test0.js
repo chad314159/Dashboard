@@ -103,7 +103,7 @@ $(function() {
                         return o === d;
                     })
                     .append('title')
-                    .text(function(o) { return o.name + ' / Songs: ' + o.count + ' / Plays: ' + o.plays; });
+                    .text(function(o) { return o.name + ' / Count: ' + o.count + ' / Difficulty: ' + o.plays; });
             }
         };
     }

@@ -13,7 +13,9 @@ queue()
     	studentData.forEach(function(d) {
         // console.log(d["date_posted"]);
     		d["semester"]= dateFormat(d["semester"]);
-        d["semester"]= d3.time.year(d["semester"]).getFullYear();
+        // console.log(Object.prototype.toString.call(d["semester"]) + " year");
+        // d["semester"]= d3.time.year(d["semester"]).getFullYear();
+        // console.log(d["semester"]);
     		d["salary"] = +d["salary"];
         d["count"] = +d["count"];
     	});
@@ -109,9 +111,23 @@ queue()
 
 
     	//Define values (to be used in charts)
-    	var minDate = dateDim.bottom(1)[0]["semester"];
+    	var minDate = new Date(dateDim.bottom(1)[0]["semester"]);
+      console.log(Object.prototype.toString.call(minDate) + " chaddddy");
 
-    	var maxDate = dateDim.top(1)[0]["semester"];
+      // var extra = d3.time.format('%Y').parse(minDate);
+      // console.log(extra);
+
+    	var maxDate = new Date(dateDim.top(1)[0]["semester"]);
+
+
+
+      minDate.setYear(minDate.getYear() - 1);
+      maxDate.setYear(maxDate.getYear() + 1);
+
+
+
+
+
         //Charts
     	var timeChart = dc.barChart("#time-chart");
     	var jobTypeChart = dc.rowChart("#employer-type-row-chart");
@@ -126,8 +142,14 @@ queue()
 
 
       // create functions to generate averages for any attribute
-      var dict={10705099:117,0:117, 2667737:28, 1029608:12,1439306:16,1122730:13,451310:5,
-                506479:5, 600346:6,308459:3,283905:3,205530:2,433432:5, 1304776:15, 351481:4};
+      var dict={10705099:117,0:117, 2667737:28, 1029608:12,1439306:16,1122730:13,451310:5,2473641:28,6557005:73,1825499:20,3062958:35,1020406:10,
+                2257865:25,1237459:15,4083364:45,4299140:48,5536599:63, 506479:5, 600346:6,308459:3,283905:3,205530:2,433432:5, 1304776:15, 351481:4
+                ,789709:9,1161886:14,1523504:17,6621735:72,8447234:92,9684693:107,1626176:19,1191923:14,936034:11,5427462:56
+                ,6363496:67,6619385:70,7053638:75,6950966:73
+                ,2127957:25,2562210:30,2459538:28,2818099:33,2715427:31
+                ,3149680:36,7555419:81
+                ,7989672:86,7887000:84
+                ,1200309:14,4005330:46,1058487:11,2670215:27,225000:3,661879:7,686764:7};
 
       var formatxAxis = d3.format('');
       var format = d3.format("0000");
@@ -140,9 +162,9 @@ queue()
           }else{
             x=1;
           }
-
           return d/x;
       };
+
 
     	numberAlumniND
     		.formatNumber(d3.format("d"))
@@ -159,19 +181,20 @@ queue()
     		.formatNumber(d3.format(".3s"));
 
 
+      var number_of_bins = 8;
     	timeChart
-    		.width(600)
+    		.width(750)
     		.height(160)
-
     		.margins({top: 10, right: 50, bottom: 30, left: 50})
     		.dimension(dateDim)
     		.group(numProjectsByDate)
-    		.x(d3.time.scale().domain([String(minDate), maxDate]))
-
-    		.elasticY(true)
-    		.xAxisLabel("Count")
-    		.yAxis().ticks(3);
-
+    		.x(d3.time.scale().domain([minDate, maxDate]))
+        .xUnits(function(){return number_of_bins;})
+        .xAxisPadding(22)
+        .elasticX(true)
+        .elasticY(true)
+        .gap(0)
+        .centerBar(true);
 
         //top employer
     	jobTypeChart
