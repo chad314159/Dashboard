@@ -10,9 +10,9 @@ app = Flask(__name__)
 
 MONGODB_HOST = 'localhost'
 MONGODB_PORT = 27017
-DBS_NAME = 'studentdata'
+DBS_NAME = 'studentdata1'
 COLLECTION_NAME = 'dashboard'
-FIELDS = {'state': True, 'category': True, 'sector': True, 'semester': True, 'salary': True, '_id': False}
+FIELDS = {'state': True, 'category': True, 'sector': True, 'semester': True, 'salary': True, 'count': True, '_id': False}
 
 
 
