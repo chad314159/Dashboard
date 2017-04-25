@@ -51,7 +51,7 @@ $(function() {
     function radius(d) {
         var r = typeSize(d);
         if (d.type === 'g') {
-            r = Math.max(r * 40, 4);
+            r = Math.max(r * 10, 4);
         } else {
             r = Math.max(r * 25, 2);
         }
@@ -95,7 +95,7 @@ $(function() {
                             return (o == d) ? (rad + 10) + 'px' : '5px';
                         })
                     .style('fill', '#C17021')
-                    .attr('text-anchor', 'middle')
+                    .attr('text-anchor', 'right')
                     .attr('class', 'label')
                     .text(function(o) { return (o !== d) ? o.name.substr(0, 16) : ''; });
 
@@ -111,7 +111,7 @@ $(function() {
     var force = d3.layout.force()
         .on('tick', tick)
         .size([w, h])
-        .linkDistance(30)
+        .linkDistance(50)
         //.gravity(0.05)
         .charge(charge);
 

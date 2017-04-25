@@ -140,17 +140,6 @@ queue()
     	var totalSalaryND = dc.numberDisplay("#average-salary-nd");
 
 
-
-      // create functions to generate averages for any attribute
-      var dict={10705099:117,0:117, 2667737:28, 1029608:12,1439306:16,1122730:13,451310:5,2473641:28,6557005:73,1825499:20,3062958:35,1020406:10,
-                2257865:25,1237459:15,4083364:45,4299140:48,5536599:63, 506479:5, 600346:6,308459:3,283905:3,205530:2,433432:5, 1304776:15, 351481:4
-                ,789709:9,1161886:14,1523504:17,6621735:72,8447234:92,9684693:107,1626176:19,1191923:14,936034:11,5427462:56
-                ,6363496:67,6619385:70,7053638:75,6950966:73
-                ,2127957:25,2562210:30,2459538:28,2818099:33,2715427:31
-                ,3149680:36,7555419:81
-                ,7989672:86,7887000:84
-                ,1200309:14,4005330:46,1058487:11,2670215:27,225000:3,661879:7,686764:7};
-
       var formatxAxis = d3.format('');
       var format = d3.format("0000");
 
@@ -165,10 +154,12 @@ queue()
           return d/x;
       };
 
+      var numAlumniTest=1;
 
     	numberAlumniND
     		.formatNumber(d3.format("d"))
     		.valueAccessor(function(d){
+                          numAlumniTest=d;
                           return d; })
     		.group(all);
 
@@ -176,7 +167,8 @@ queue()
       //Average Salary in USD
     	totalSalaryND
     		.formatNumber(d3.format("d"))
-    		.valueAccessor(average)
+    		.valueAccessor(function(d){
+                          return d/numAlumniTest; })
     		.group(totalSalary)
     		.formatNumber(d3.format(".3s"));
 
