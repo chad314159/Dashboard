@@ -35,21 +35,25 @@ def dashboard():
     connection.close()
     return json_projects
 
-@app.route("/test")
+@app.route("/network")
 def test():
-    return render_template("test.html");
+    return render_template("network.html");
 
 @app.route("/test3")
 def test1():
     return render_template("test3.html");
 
-@app.route("/test4")
+@app.route("/skills")
 def test2():
-    return render_template("test4.html");
+    return render_template("skills.html");
 
-@app.route("/feedback")
+@app.route("/data")
 def test3():
-    return render_template("feedback.html");
+    return render_template("data.html");
+
+@app.route("/contact")
+def test4():
+    return render_template("contact.html");
 
 @app.route("/api")
 def runapi():

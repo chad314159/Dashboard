@@ -210,7 +210,7 @@ queue()
     		.height(330)
     		.dimension(stateDim)
     		.group(totalSalaryByState)
-    		.colors(["#E2F2FF", "#C4E4FF", "#9ED2FF", "#81C5FF", "#6BBAFF", "#51AEFF", "#36A2FF", "#1E96FF", "#0089FF", "#0061B5"])
+    		.colors(["#ffe5e2", "#f9b4ac", "#f79388", "##f77365", "#f25848", "#f24735", "#f22c18", "#ef1802"])
     		.colorDomain([0, max_state])
     		.overlayGeoJson(statesJson["features"], "state", function (d) {
     			return d.properties.name;

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./static/lib/css/contact.css">
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+
+
+</head>
+
+<body class="application">
+  <header>
+    <div class="jumbotron">
+    </div><!-- jumbotron -->
+  </header>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#af1919;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img src=".\static\lib\css\logo1.png" class="img-rounded" alt="Cinque Terre" width="70" height="70">
+        </div>
+        <div class="navbar-header">
+        <a class="navbar-brand"  href="./"> <font color ="#af1919">sp</font> COURSE-2-CAREER DASHBOARD</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/schools" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"><span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/network">Network</a></li>
+            <li><a href="/skills">Skills</a></li>
+            </ul>
+            </li>
+          <li><a href="/data">Data Entry</a></li>
+          <li><a href="/contact">Contact</a></li>
+
+    </div>
+  </div>
+
+  <div class="wrapper">
+  		<div id="main" style="padding:50px 0 0 0;">
+
+  		<!-- Form -->
+  		<form id="contact-form" action="/" method="post">
+  			<h3>Get in touch with CMU Career Office</h3>
+  			<h4>Please fill in the form below</h4>
+  			<div>
+  				<label>
+  					<span>Andrew ID: (required)</span>
+  					<input placeholder="Andrew ID here" type="text" tabindex="1" required autofocus>
+  				</label>
+  			</div>
+  			<div>
+  				<label>
+  					<span>Email: </span>
+  					<input placeholder="Email address here" type="email" tabindex="2" >
+  				</label>
+  			</div>
+  			<div>
+  				<label>
+  					<span>Telephone: </span>
+  					<input placeholder="Phone number here" type="tel" tabindex="3" >
+  				</label>
+  			</div>
+  			<div>
+  				<label>
+  					<span>Advisor: </span>
+  					<input placeholder="Advisor name here" type="text" tabindex="4" required>
+  				</label>
+  			</div>
+  			<div>
+  				<label>
+  					<span>Message: (required)</span>
+  					<textarea placeholder="Please describe your comments or concerns." tabindex="5" required></textarea>
+  				</label>
+  			</div>
+  			<div>
+  				<button name="submit" type="submit" id="contact-submit">Send</button>
+  			</div>
+  		</form>
+  		<!-- /Form -->
+
+  		</div>
+  	</div>
+
+
+  <script src="./static/lib/js/scripts.js"></script>
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/crossfilter.js"></script>
+  <script src="./static/lib/js/d3.js"></script>
+  <script src="./static/lib/js/dc.js"></script>
+  <script src="./static/lib/js/queue.js"></script>
+
+
+  <script src="./static/lib/js/keen.min.js"></script>
+  <script src='./static/js/graphs.js' type='text/javascript'></script>
+</body>
+</html>

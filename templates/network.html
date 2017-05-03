@@ -102,27 +102,7 @@ ul.connection:after {
    left: 20px;
    z-index: 1;
 }
-/*
-ul.connection li {
-   background-color: #eee;
-   border-left: 1px #444 solid;
-   border-right: 1px #444 solid;
-   font-size: 11px;
-   font-weight: normal;
-   margin: 0 50% 0 -50%;
-   padding: 2px 4px;
-}
-ul.connection li:first-child {
-   border-top: 1px #444 solid;
-   border-top-left-radius: 4px;
-   border-top-right-radius: 4px;
-}
-ul.connection li:last-child {
-   border-bottom: 1px #444 solid;
-   border-bottom-left-radius: 4px;
-   border-bottom-right-radius: 4px;
-}
-*/
+
 ul.connection.hidden {
    display: none;
 }
@@ -130,22 +110,23 @@ ul.connection.hidden {
    </style>
   </header>
 
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#af1919;">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="./">CMU Heinz Career Services Dashboard</a>
+        <img src=".\static\lib\css\logo1.png" class="img-rounded" alt="Cinque Terre" width="70" height="70">
+        </div>
+        <div class="navbar-header">
+        <a class="navbar-brand"  href="./"> <font color ="#af1919">sp</font> COURSE-2-CAREER DASHBOARD</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/">Home</a></li>
         <li><a href="/schools" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"><span></a>
           <ul class="dropdown-menu">
-            <li><a href="/test">Main</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="/test3">test3</a></li>
-            <li><a href="/test4">test4</a></li>
+            <li><a href="/network">Network</a></li>
+            <li><a href="/skills">Skills</a></li>
             </ul>
             </li>
-          <li><a href="/feedback">Feedback</a></li>
+          <li><a href="/data">Data Entry</a></li>
           <li><a href="/contact">Contact</a></li>
 
     </div>
@@ -253,63 +234,22 @@ data = [
   {
     "class": "Sr Software Engineer",
     "category": "Tecnical",
-    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
+    "cover": "http://icons.iconarchive.com/icons/dapino/office-women/128/office-women-red-icon.png",
     "color": "#47738C",
     "text": "#0A0606",
     "classes": [
-      "BUSINESS PROCESS MODELING",
       "INTERNET TCHNOLOGIES",
-      "MEASURING SOCIAL",
       "DATA MINING",
       "DSAP",
-      "NEGOTIATION",
-      "DATA WAREHOUSING"
-
-    ]
-  },{
-    "class": "Associate",
-    "category": "Business",
-    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
-    "color": "#747C7B",
-    "text": "#343437",
-    "classes": [
-      "PROGRAMMING R FOR ANALYTICS",
+      "DATA STRUCTURES AND ALGORITHMS",
+      "AGILE METHODS",
+      "ELECTRONIC COMMERCE TECHN",
+      "BI AND DATA MINING SAS",
+      "IT PROJECT MANAGEMENT",
       "BUSINESS PROCESS MODELING",
-      "ACTING FOR MANGEMNT",
-      "EXPLORING AND VISUALIZING DATA",
-      "MEASURING SOCIAL",
-      "ITIL FRAMEWORK",
-      "IT BUSINESS LEADERSHIP",
-      "BI and DM w/ SAS",
-      "DATA WAREHOUSING"
-    ]
-  },{
-    "class": "Consultant",
-    "category": "Business",
-    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
-    "color": "#42578E",
-    "text": "#D57130",
-    "classes": [
-      "BUSINESS PROCESS MODELING",
-      "INTERNET SECURITY",
-      "ENTERPRISE ARCHITECTURES",
-      "IT BUSINESS LEADERSHIP",
-      "DATA MINING",
-      "PROJECT MANAGEMENT",
-      "MANGN ANALYTC PROJCT",
-      "ACTING FOR MANGEMNT",
       "DATA WAREHOUSING",
-      "INT'L CRISIS NEGO EX",
-      "LINUX & OPEN SOURCE",
-      "MARKETING DIGITAL MEDIA",
-      "TECH STARTUP",
-      "DIGITAL MARKETING ANALYTICS",
-      "LEAN ENTREPRENEURSHIP",
-      "HADOOP & MAPREDUCE",
-      "STRATEGY DEVELOPMENT",
-      "DATA MINING SAS",
-      "NOSQL DATABASE MANAGEMENT",
-
+      "ACTING FOR MANGEMNT",
+      "DATA MINING SAS"
     ]
   },{
     "class": "Financial Analyst",
@@ -318,35 +258,38 @@ data = [
     "color": "#D06B2F",
     "text": "#2F4051",
     "classes": [
-      "TECH STARTUP",
+      "CORPORATE FINANCE",
       "MANAGEMENT CONSULTING",
       "TEXT ANALYTICS",
       "DATA MINING",
       "DIGITAL MARKETING ANALYTICS",
-      "BI and DM w/ SAS",
-      "PYTH FOR DATA ANA",
+      "BI AND DATA MINING SAS",
       "DATA WAREHOUSING"
     ]
   },{
     "class": "Data Analyst",
     "category": "Business",
-    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
+    "cover": "http://icons.iconarchive.com/icons/dapino/office-women/128/eyes-office-women-glasses-icon.png",
     "color": "#B03239",
     "text": "#191A18",
     "classes": [
       "DATA MINING",
-      "DATA STRUCTURES AND ALGORITHMS",
       "TEXT ANALYTICS",
       "ADV DATABASE MNGMNT",
-      "DSAP",
-      "HADOOP & MAPREDUCE",
-      "ACTING FOR MANGEMNT",
-      "AGILE METHODS"
+      "AGILE METHODS",
+      "BUSINESS PROCESS MODELING",
+      "MEASURING SOCIAL",
+      "BI AND DATA MINING SAS",
+      "DATA WAREHOUSING",
+      "DIGITAL MARKETING ANALYTICS",
+      "PYTHON FOR DEVELOPERS",
+      "APPLIED ECONOMETRICS I"
     ]
-  },{
+  },
+  {
     "class": "Web Developer",
     "category": "Technical",
-    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
+    "cover": "http://icons.iconarchive.com/icons/dapino/office-women/128/eyes-office-women-pink-icon.png",
     "color": "#B08865",
     "text": "#483830",
     "classes": [
@@ -357,39 +300,44 @@ data = [
       "NOSQL DATABASE MANAGEMENT",
       "ACTING FOR MANGEMNT"
     ]
-  },{
+  },
+  {
     "class": "Product Manager",
     "category": "Business",
-    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
+    "cover": "http://icons.iconarchive.com/icons/dapino/office-women/128/eyes-office-women-red-icon.png",
     "color": "#0C7F90",
     "text": "#041E1F",
     "classes": [
       "IT BUSINESS LEADERSHIP",
       "MARKETING DIGITAL MEDIA",
       "IT PROJECT MANAGEMNT",
+      "STRATEGY DEVELOPMENT",
       "MANAGEMENT CONSULTING",
-      "PRODUCT MANAGEMENT IN INFORMATION TECHNOLOGY",
+      "PRODUCT MANAGEMENT IN IT",
       "GLOBAL IT SOURCING",
-      "ETHCL ISS MANAGEMNT",
       "ACTING FOR MANGEMNT",
-      "NOSQL DATABASE MANAGEMENT"
+      "NOSQL DATABASE MANAGEMENT",
+      "INNOVATION AND TECHNOLOGY",
+      "MEASURING SOCIAL",
+      "INTL CRISIS NEGO EX",
+      "AGILE METHODS"
     ]
   },{
     "class": "Lead Business Analyst",
     "category": "Business",
-    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
+    "cover": "http://icons.iconarchive.com/icons/dapino/office-women/128/eyes-office-women-yellow-icon.png",
     "color": "#ED8C42",
     "text": "#24231B",
     "classes": [
       "PROGRAMMING R FOR ANALYTICS",
       "BUSINESS PROCESS MODELING",
-      "ELECTRONIC COMMERCE TECHNOLOGIES",
+      "ELECTRONIC COMMERCE TECH",
       "INNOVATION AND TECHNOLOGY",
       "DATA WAREHOUSING",
       "EXPLORING AND VISUALIZING DATA",
       "IT PROJECT MANAGEMNT",
       "ACTING FOR MANGEMNT",
-      "BI and DM w/ SAS"
+      "BI AND DATA MINING SAS"
     ]
   },{
     "class": "Development Engineer",
@@ -398,32 +346,34 @@ data = [
     "color": "#B07B89",
     "text": "#28282C",
     "classes": [
-      "NEGOTIATION",
       "DATA STRUCTURES AND ALGORITHMS",
       "INTERNET TCHNOLOGIES",
-      "IT PROJECT MANAGEMNT",
+      "CLOUD COMPUTING",
+      "BIG DATA & LS COMPUTING",
       "DSAP",
       "HADOOP & MAPREDUCE"    ]
-  },{
+  },
+  {
     "class": "Software Engineer",
     "category": "Technical",
-    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
+   "cover": "man.png",
     "color": "#6B548B",
     "text": "#2A231F",
     "classes": [
-      "NEGOTIATION",
       "DATA STRUCTURES AND ALGORITHMS",
       "INTERNET TCHNOLOGIES",
-      "IT PROJECT MANAGEMNT",
-      "DSAP",
       "HADOOP & MAPREDUCE",
-      "IT BUSINESS LEADERSHIP",
-      "PRODUCT MANAGEMENT IN IT",
       "INTERMEDIATE JAVA II",
-      "STRATEGY DEVELOPMENT",
       "DSAP",
-      "DATA MINING SAS"
-
+      "AGILE METHODS",
+      "PYTHON FOR DEVELOPERS",
+      "NETWORK DEFENSES",
+      "LINUX & OPEN SOURCE",
+      "PROGRAMMING R FOR ANALYTICS",
+      "CLOUD COMPUTING",
+      "WEB APPLICATION DEVELOPMENT",
+      "CONSULTING LAB",
+      "APPLIED DATA SCIENCE"
     ]
   },{
     "class": "Technology Analyst",
@@ -432,22 +382,16 @@ data = [
     "color": "#649B9E",
     "text": "#212B30",
     "classes": [
-      "THE ART & SCIENCE OF BUSINESS ANALYTICS",
-      "IT PROJECT MANAGEMNT",
-      "ITIL FRAMEWORK",
-      "DATA MINING SAS",
-      "AGILE METHODS",
-      "DATA WAREHOUSING",
+      "THE ART & SCI OF BA",
       "DATA MINING",
-      "PROGRAMMING R FOR ANALYTICS",
-      "BUSINESS PROCESS MODELING",
-      "ELECTRONIC COMMERCE TECHNOLOGIES",
       "TEXT ANALYTICS",
-      "INTERNET TCHNOLOGIES",
-      "DIGITAL MARKETING ANALYTICS",
-      "DSAP"
+      "ADV DATABASE MNGMNT",
+      "DATA MINING SAS",
+      "DATA WAREHOUSING",
+      "BUSINESS PROCESS MODELING"
     ]
-  },{
+  },
+  {
     "class": "Project Manager",
     "category": "Technical",
     "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
@@ -459,10 +403,35 @@ data = [
       "IT PROJECT MANAGEMNT",
       "ITIL FRAMEWORK",
       "MANGN ANALYTC PROJCT",
-      "DATA MINING SAS",
       "AGILE METHODS",
       "DEVELOPING AS A LEADER",
-      "DATA WAREHOUSING"
+      "PRINCIPLES OF MARKETING",
+      "DIGITAL MARKETING ANALYTICS",
+      "APPLIED ECONOMETRICS I",
+      "ADVANCED DATABASE MANAGEMENT"
+    ]
+  },
+  {
+    "class": "Experienced Associate",
+    "category": "Technical",
+    "cover": "http://icons.iconarchive.com/icons/dapino/office-men/128/Man-Black-icon.png",
+    "color": "#649B9E",
+    "text": "#212B30",
+    "classes": [
+      "DATA WAREHOUSING",
+      "BI AND DATA MINING SAS",
+      "IT BUSINESS LEADERSHIP",
+      "IT PROJECT MANAGEMNT",
+      "LEAN ENTREPRENEURSHIP",
+      "STRATEGY DEVELOPMENT",
+      "BUSINESS PROCESS MODELING",
+      "ACTING FOR MANGEMNT",
+      "EXPLORING AND VISUALIZING DATA",
+      "TECH STARTUP",
+      "INNOVATION AND TECHNOLOGY",
+      "MARKETING DIGITAL MEDIA",
+      "PRODUCT MANAGEMENT IN IT",
+      "NEGOTIATION"
     ]
   }
 ];
