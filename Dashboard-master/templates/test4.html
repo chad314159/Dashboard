@@ -76,28 +76,15 @@ var treeData =
 
       {  "name": "Technology",
           "children": [
-                {  "name": "Python for Developers",
-                      "children": [  { "name": "Scripting"  },
-                         { "name": "External Libraries"  }
-
-                    ]
-
-                  },
-                  {  "name": "Data Focused Python",
+			{ "name": "Data",
+          "children": [
+		  {  "name": "Data Focused Python",
                         "children": [  { "name": "Text Analytics"  },
                            { "name": "Data Analytics"  }
 
                       ]
 
-                    },
-                    {  "name": "Internet Technologies",
-                          "children": [  { "name": "Website Design"  },
-                             { "name": "Frontend"  }
-
-                        ]
-
-                      },
-                      {  "name": "Data Mining",
+                    }, {  "name": "Data Mining",
                             "children": [
                                { "name": "Predictive Modeling"  },
                                { "name": "Statistics"  },
@@ -108,7 +95,7 @@ var treeData =
                           ]
 
                         },
-                        {  "name": "Data Warehousing",
+						{  "name": "Data Warehousing",
                               "children": [
                                  { "name": "Dimensional Modeling"  },
                                  { "name": "ETL"  },
@@ -118,7 +105,7 @@ var treeData =
                             ]
 
                           },
-                          {  "name": "Exploring and Visualizing Data",
+						  {  "name": "Exploring and Visualizing Data",
                                 "children": [
                                    { "name": "Statistics"  },
                                    { "name": "Interpretation"  },
@@ -128,7 +115,7 @@ var treeData =
                               ]
 
                             },
-                            {  "name": "Business Intelligence and Data Analytics with SAS Miner",
+							{  "name": "Business Intelligence and Data Analytics with SAS Miner",
                                   "children": [
                                      { "name": "Predictive Modeling"  },
                                      { "name": "Exploratory Analysis"  },
@@ -137,8 +124,26 @@ var treeData =
 
                                 ]
 
-                              },
-                              {  "name": "Enterprise Architecture",
+                              }
+		  ]
+		  },
+		  { "name": "Development",
+          "children": [
+		  {  "name": "Python for Developers",
+                      "children": [  { "name": "Scripting"  },
+                         { "name": "External Libraries"  }
+
+                    ]
+
+                  },
+				   {  "name": "Internet Technologies",
+                          "children": [  { "name": "Website Design"  },
+                             { "name": "Frontend"  }
+
+                        ]
+
+                      },
+					   {  "name": "Enterprise Architecture",
                                     "children": [
                                        { "name": "Scalable Systems"  },
                                        { "name": "Optimization"  },
@@ -148,23 +153,16 @@ var treeData =
                                   ]
 
                                 }
-                ]
-      },
-      {  "name": "Management",
+		  ]
+		  }
+		 ]
+		},
+		
+		{  "name": "Management",
           "children": [
-
-                    {  "name": "IT Project Management",
-                          "children": [
-                             { "name": "SDLC"  },
-                             { "name": "Agile Methodologies"  },
-                             { "name": "NPV"  } ,
-                             { "name": "Project Scheduling"  }
-
-                        ]
-
-                      },
-
-                      {  "name": "Business Process Modeling",
+			{ "name": "Consulting",
+          "children": [
+		                        {  "name": "Business Process Modeling",
                             "children": [
                                { "name": "Process Reengineering"  },
                                { "name": "Case Studies"  },
@@ -173,8 +171,7 @@ var treeData =
                           ]
 
                       },
-
-                      {  "name": "Measuring Social",
+					   {  "name": "Measuring Social",
                             "children": [
                                { "name": "Project Management"  },
                                { "name": "Social Analytics"  },
@@ -185,7 +182,7 @@ var treeData =
                           ]
 
                       },
-                      {  "name": "Management Consulting",
+					   {  "name": "Management Consulting",
                             "children": [
                                { "name": "Client Relationship"  },
                                { "name": "Trust"  },
@@ -196,7 +193,7 @@ var treeData =
                           ]
 
                       },
-                      {  "name": "Negotiation",
+					   {  "name": "Negotiation",
                             "children": [
                                { "name": "Negotiation Dynamics"  },
                                { "name": "Cooperation"  },
@@ -206,7 +203,7 @@ var treeData =
                           ]
 
                       },
-                      {  "name": "Organizational Design and Implementation",
+					   {  "name": "Organizational Design and Implementation",
                             "children": [
                                { "name": "Leadership"  },
                                { "name": "Team Buidling"  },
@@ -216,7 +213,41 @@ var treeData =
                           ]
 
                       },
-                      {  "name": "IT Business Leadership",
+		  ]
+		  },
+		  { "name": "Project/Product Management",
+          "children": [
+		  {  "name": "IT Project Management",
+                          "children": [
+                             { "name": "SDLC"  },
+                             { "name": "Agile Methodologies"  },
+                             { "name": "NPV"  } ,
+                             { "name": "Project Scheduling"  }
+
+                        ]
+
+                      },
+					   {  "name": "Negotiation",
+                            "children": [
+                               { "name": "Negotiation Dynamics"  },
+                               { "name": "Cooperation"  },
+                               { "name": "Opportunities"  },
+                               { "name": "Collective Bargaining"  }
+
+                          ]
+
+                      },
+					   {  "name": "Organizational Design and Implementation",
+                            "children": [
+                               { "name": "Leadership"  },
+                               { "name": "Team Buidling"  },
+                               { "name": "Case Studies"  },
+                               { "name": "Social Science"  }
+
+                          ]
+
+                      },
+					   {  "name": "IT Business Leadership",
                             "children": [
                                { "name": "Leadership"  },
                                { "name": "Managerial"  },
@@ -226,19 +257,17 @@ var treeData =
                           ]
 
                       }
+		  ]
+		  }
+		 ]
+		}
 
-                ]
-            }
-
-          ]
-
-      }
-
-
+	]
+	}
 
 
 // Set the dimensions and margins of the diagram
-var margin = {top: 20, right: 90, bottom: 30, left: 90},
+var margin = {top: 20, right: 690, bottom: 30, left: 230},
     width = 1200 - margin.left - margin.right,
     height = 700 - margin.top - margin.bottom;
 
