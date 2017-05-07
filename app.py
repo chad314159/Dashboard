@@ -27,7 +27,7 @@ def dashboard():
     projects = collection.find({},FIELDS, limit=50)
 
     json_projects = []
-    for project in projects[1:]:
+    for project in projects[1:]: #minus the header
         json_projects.append(project)
     json_projects = json.dumps(json_projects, default=json_util.default)
     connection.close()
