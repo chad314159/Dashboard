@@ -20,8 +20,6 @@ FIELDS = {'state': True, 'category': True, 'sector': True, 'semester': True, 'sa
 def index():
     return render_template("index.html")
 
-# @app.route("/donorschoose/projects")
-
 @app.route("/studentData/dashboard")
 def dashboard():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)

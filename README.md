@@ -10,6 +10,10 @@ need to contact Heinz College for more information.
     $ pip install -r requirements.txt
 
 3. The user will also need to have an instance of MongoDB. Once it is installed, you can easily
-import it by
+import it by:
 
     $ mongoimport -d studentdata -c dashboard --type csv --file dashboard_data -headerline
+
+4. The visualizations for this prototype have been primarily generated from Mike Bostick's
+d3 visualization page. Various other visualizations, some which inspired visualizations within
+this prototype can be accessed at: https://bl.ocks.org/mbostock
